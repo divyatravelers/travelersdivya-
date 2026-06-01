@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Divya Travels - Explore The World</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#fff;
+color:#222;
+overflow-x:hidden;
+}
+
+.navbar{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,0.7);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.logo{
+width:140px;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:500;
+}
+
+.hero{
+min-height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1800&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+padding:0 8%;
+color:white;
+}
+
+.hero-content{
+max-width:750px;
+}
+
+.hero h1{
+font-size:70px;
+line-height:1.1;
+margin-bottom:20px;
+}
+
+.hero h1 span{
+color:#f5b400;
+}
+
+.hero p{
+font-size:20px;
+line-height:1.8;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#f5b400;
+color:black;
+text-decoration:none;
+border-radius:40px;
+font-weight:600;
+margin-right:15px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+.btn-outline{
+background:transparent;
+border:2px solid white;
+color:white;
+}
+
+.stats{
+display:flex;
+gap:30px;
+margin-top:50px;
+flex-wrap:wrap;
+}
+
+.stat-box{
+background:rgba(255,255,255,.12);
+padding:20px;
+border-radius:15px;
+min-width:180px;
+text-align:center;
+}
+
+.stat-box h3{
+font-size:32px;
+color:#f5b400;
+}
+
+.section{
+padding:90px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:48px;
+margin-bottom:15px;
+}
+
+.section-sub{
+text-align:center;
+color:#666;
+margin-bottom:50px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:42px;
+}
+
+.nav-links{
+display:none;
+}
+
+.stats{
+flex-direction:column;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+<img src="logo.png" class="logo">
+
+<div class="nav-links">
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#india">India Tours</a>
+<a href="#international">International</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>
+Explore India & The World With
+<span>Divya Travels</span>
+</h1>
+
+<p>
+Customized domestic and international holiday packages, visa assistance,
+flight booking, hotel reservations and unforgettable travel experiences.
+</p>
+
+<a href="#india" class="btn">Indian Packages</a>
+
+<a href="#international" class="btn btn-outline">
+International Tours
+</a>
+
+<div class="stats">
+
+<div class="stat-box">
+<h3>1000+</h3>
+<p>Happy Travellers</p>
+</div>
+
+<div class="stat-box">
+<h3>50+</h3>
+<p>Destinations</p>
+</div>
+
+<div class="stat-box">
+<h3>24/7</h3>
+<p>Support</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT SECTION -->
+
+<section class="section" id="about">
+
+<h2 class="section-title">About Divya Travels</h2>
+
+<p class="section-sub">
+Your trusted travel partner for unforgettable journeys across India and around the globe.
+</p>
+
+<div style="
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+">
+
+<img
+src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=1200&auto=format&fit=crop"
+style="width:100%;border-radius:25px;">
+
+<div>
+
+<h3 style="font-size:34px;margin-bottom:20px;">
+Meet Divya – The Heart Behind Divya Travels
+</h3>
+
+<p style="line-height:1.9;color:#555;margin-bottom:20px;">
+Divya, the passionate owner of Divya Travels, is a seasoned globetrotter whose travel experiences span across Europe, Asia and India. Her extensive journeys help create authentic itineraries and memorable experiences for every traveler.
+</p>
+
+<h4 style="color:#f5b400;margin-bottom:10px;">
+✈️ International Destinations Explored
+</h4>
+
+<p style="line-height:1.9;color:#555;margin-bottom:20px;">
+Switzerland, France, Germany, Greece, Italy, China, Singapore, Thailand, Vietnam, Bali, Philippines, Japan, South Korea, Russia, Turkey and Egypt.
+</p>
+
+<h4 style="color:#f5b400;margin-bottom:10px;">
+🇮🇳 Incredible India Adventures
+</h4>
+
+<p style="line-height:1.9;color:#555;">
+Goa, Dharamshala, Manali, Kashmir, Ladakh, Jaipur, Udaipur, Agra and many more breathtaking destinations across India.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- VISA GALLERY -->
+
+<section class="section" style="background:#f8f8f8;">
+
+<h2 class="section-title">Visa Success Stories</h2>
+
+<p class="section-sub">
+Trusted Visa Assistance For Global Travel
+</p>
+
+<div style="
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+">
+
+<img src="images/visa1.jpg"
+style="width:100%;height:300px;object-fit:cover;border-radius:20px;">
+
+<img src="images/visa2.jpg"
+style="width:100%;height:300px;object-fit:cover;border-radius:20px;">
+
+<img src="images/visa3.jpg"
+style="width:100%;height:300px;object-fit:cover;border-radius:20px;">
+
+<img src="images/visa4.jpg"
+style="width:100%;height:300px;object-fit:cover;border-radius:20px;">
+
+</div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section class="section" id="services">
+
+<h2 class="section-title">Our Services</h2>
+
+<p class="section-sub">
+Complete travel solutions under one roof.
+</p>
+
+<div style="
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+">
+
+<div style="
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+">
+
+<h3>✈️ Flight Booking</h3>
+
+<p style="margin-top:15px;color:#666;line-height:1.8;">
+Affordable domestic and international flight bookings with complete support.
+</p>
+
+</div>
+
+<div style="
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+">
+
+<h3>🏨 Hotel Booking</h3>
+
+<p style="margin-top:15px;color:#666;line-height:1.8;">
+Best hotel deals and comfortable accommodations worldwide.
+</p>
+
+</div>
+
+<div style="
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+">
+
+<h3>🌍 International Tours</h3>
+
+<p style="margin-top:15px;color:#666;line-height:1.8;">
+Luxury international holiday packages with complete itinerary planning.
+</p>
+
+</div>
+
+<div style="
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+">
+
+<h3>🇮🇳 Domestic Holidays</h3>
+
+<p style="margin-top:15px;color:#666;line-height:1.8;">
+Explore India’s most beautiful destinations at affordable prices.
+</p>
+
+</div>
+
+<div style="
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+">
+
+<h3>📄 Visa Assistance</h3>
+
+<p style="margin-top:15px;color:#666;line-height:1.8;">
+Quick and hassle-free visa support for international travel.
+</p>
+
+</div>
+
+<div style="
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+">
+
+<h3>💑 Honeymoon Packages</h3>
+
+<p style="margin-top:15px;color:#666;line-height:1.8;">
+Romantic holiday experiences specially designed for couples.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- WHY CHOOSE US -->
+
+<section class="section" style="background:#f8f8f8;">
+
+<h2 class="section-title">Why Choose Us?</h2>
+
+<div style="
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:40px;
+">
+
+<div style="background:white;padding:30px;border-radius:20px;">
+<h3>✓ Customized Tours</h3>
+<p style="margin-top:15px;color:#666;">
+Packages tailored to your budget and travel preferences.
+</p>
+</div>
+
+<div style="background:white;padding:30px;border-radius:20px;">
+<h3>✓ Visa Expertise</h3>
+<p style="margin-top:15px;color:#666;">
+Fast and reliable visa assistance for global travel.
+</p>
+</div>
+
+<div style="background:white;padding:30px;border-radius:20px;">
+<h3>✓ Best Pricing</h3>
+<p style="margin-top:15px;color:#666;">
+Competitive rates through strong travel partnerships.
+</p>
+</div>
+
+<div style="background:white;padding:30px;border-radius:20px;">
+<h3>✓ Dedicated Support</h3>
+<p style="margin-top:15px;color:#666;">
+Support available throughout your travel journey.
+</p>
+</div>
+
+</div>
+
+</section>
+<!-- INDIA PACKAGES -->
+
+<section class="section" id="india">
+
+<h2 class="section-title">India Tour Packages</h2>
+
+<p class="section-sub">
+Discover India's most loved destinations.
+</p>
+
+<div style="
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+">
+
+<!-- ANDAMAN -->
+
+<div style="
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+">
+
+<img src="https://images.unsplash.com/photo-1589308454676-22a0df7d84b?q=80&w=1200&auto=format&fit=crop"
+style="width:100%;height:240px;object-fit:cover;">
+
+<div style="padding:25px;">
+
+<h3>Mesmerizing Andaman</h3>
+
+<h2 style="color:#f5b400;margin:15px 0;">
+₹17,999
+</h2>
+
+<p style="color:#666;line-height:1.8;">
+5D/4N package with beaches, island hopping and water activities.
+</p>
+
+<br>
+
+<a href="https://forms.gle/4sg8dcT8HP7iEQhT6" class="btn">
+More Details
+</a>
+
+</div>
+
+</div>
+
+<!-- GOA -->
+
+<div style="
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+">
+
+<img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?q=80&w=1200&auto=format&fit=crop"
+style="width:100%;height:240px;object-fit:cover;">
+
+<div style="padding:25px;">
+
+<h3>Goa Delight</h3>
+
+<h2 style="color:#f5b400;margin:15px 0;">
+₹9,999
+</h2>
+
+<p style="color:#666;line-height:1.8;">
+Beautiful beaches, nightlife and exciting water sports.
+</p>
+
+<br>
+
+<a href="https://forms.gle/4sg8dcT8HP7iEQhT6" class="btn">
+More Details
+</a>
+
+</div>
+
+</div>
+
+<!-- KASHMIR -->
+
+<div style="
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+">
+
+<img src="https://images.unsplash.com/photo-1598091383021-15ddea10925d?q=80&w=1200&auto=format&fit=crop"
+style="width:100%;height:240px;object-fit:cover;">
+
+<div style="padding:25px;">
+
+<h3>Kashmir Tour</h3>
+
+<h2 style="color:#f5b400;margin:15px 0;">
+₹14,499
+</h2>
+
+<p style="color:#666;line-height:1.8;">
+Experience paradise on earth with valleys and mountains.
+</p>
+
+<br>
+
+<a href="https://forms.gle/4sg8dcT8HP7iEQhT6" class="btn">
+More Details
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- INTERNATIONAL PACKAGES -->
+
+<section class="section" id="international" style="background:#f8f8f8;">
+
+<h2 class="section-title">International Packages</h2>
+
+<p class="section-sub">
+Luxury international holiday experiences.
+</p>
+
+<div style="
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+">
+
+<!-- DUBAI -->
+
+<div style="
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+">
+
+<img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1200&auto=format&fit=crop"
+style="width:100%;height:240px;object-fit:cover;">
+
+<div style="padding:25px;">
+
+<h3>Dubai Tour</h3>
+
+<h2 style="color:#f5b400;margin:15px 0;">
+₹54,990
+</h2>
+
+<p style="color:#666;line-height:1.8;">
+Luxury city experience with shopping and desert safari.
+</p>
+
+<br>
+
+<a href="https://forms.gle/4sg8dcT8HP7iEQhT6" class="btn">
+More Details
+</a>
+
+</div>
+
+</div>
+
+<!-- SINGAPORE -->
+
+<div style="
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+">
+
+<img src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?q=80&w=1200&auto=format&fit=crop"
+style="width:100%;height:240px;object-fit:cover;">
+
+<div style="padding:25px;">
+
+<h3>Singapore Tour</h3>
+
+<h2 style="color:#f5b400;margin:15px 0;">
+₹60,099
+</h2>
+
+<p style="color:#666;line-height:1.8;">
+Family attractions, theme parks and premium experiences.
+</p>
+
+<br>
+
+<a href="https://forms.gle/4sg8dcT8HP7iEQhT6" class="btn">
+More Details
+</a>
+
+</div>
+
+</div>
+
+<!-- MALDIVES -->
+
+<div style="
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+">
+
+<img src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd?q=80&w=1200&auto=format&fit=crop"
+style="width:100%;height:240px;object-fit:cover;">
+
+<div style="padding:25px;">
+
+<h3>Maldives Tour</h3>
+
+<h2 style="color:#f5b400;margin:15px 0;">
+₹94,990
+</h2>
+
+<p style="color:#666;line-height:1.8;">
+Luxury beach resort stays and honeymoon packages.
+</p>
+
+<br>
+
+<a href="https://forms.gle/4sg8dcT8HP7iEQhT6" class="btn">
+More Details
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="section" id="contact">
+
+<h2 class="section-title">Contact Divya Travels</h2>
+
+<p class="section-sub">
+Let's plan your next unforgettable journey.
+</p>
+
+<div style="
+max-width:800px;
+margin:auto;
+text-align:center;
+background:#f8f8f8;
+padding:50px;
+border-radius:25px;
+">
+
+<h3 style="font-size:32px;margin-bottom:20px;">
+📞 +91 98913 79934
+</h3>
+
+<p style="line-height:2;color:#666;">
+Visa Assistance<br>
+Domestic Tour Packages<br>
+International Tour Packages<br>
+Flight Booking<br>
+Hotel Booking
+</p>
+
+<br>
+
+<a href="https://forms.gle/4sg8dcT8HP7iEQhT6" class="btn">
+Enquire Now
+</a>
+
+<a href="tel:+919891379934" class="btn">
+Call Now
+</a>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer style="
+background:#111;
+color:white;
+text-align:center;
+padding:60px 20px;
+">
+
+<img src="logo.png"
+style="width:100px;margin-bottom:20px;">
+
+<h2>Divya Travels</h2>
+
+<p style="
+margin-top:15px;
+color:#bbb;
+line-height:1.8;
+">
+Your trusted travel partner for domestic and international holidays.
+</p>
+
+<p style="margin-top:15px;">
+📞 +91 98913 79934
+</p>
+
+<p style="margin-top:15px;color:#777;">
+© 2026 Divya Travels. All Rights Reserved.
+</p>
+
+</footer>
+
+<!-- WHATSAPP BUTTON -->
+
+<a href="https://wa.me/919891379934"
+target="_blank"
+style="
+position:fixed;
+bottom:25px;
+right:25px;
+width:65px;
+height:65px;
+background:#25D366;
+color:white;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+text-decoration:none;
+box-shadow:0 5px 20px rgba(0,0,0,.25);
+z-index:999;
+">
+💬
+</a>
+
+</body>
+</html>
